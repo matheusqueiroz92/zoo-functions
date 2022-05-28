@@ -9,6 +9,7 @@ const data = require('../data/zoo_data');
 //   { name: 'Carlos Nogueira', age: 50 },
 // ];
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function countEntrants(entrants) {
   // seu código aqui
   if (!entrants) return 0;
