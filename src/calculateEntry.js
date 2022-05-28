@@ -9,17 +9,16 @@ const data = require('../data/zoo_data');
 //   { name: 'Carlos Nogueira', age: 50 },
 // ];
 
-// eslint-disable-next-line sonarjs/cognitive-complexity
 function countEntrants(entrants) {
   // seu código aqui
   if (!entrants) return 0;
-  const count = entrants.reduce((acc, cur) => {
-    if (cur.age < 18) acc.child += 1;
-    if (cur.age >= 18 && cur.age < 50) acc.adult += 1;
-    if (cur.age >= 50) acc.senior += 1;
-    return acc;
-  }, { adult: 0, child: 0, senior: 0 });
-  return count;
+  // const count = entrants.reduce((acc, cur) => {
+  //   if (cur.age < 18) acc.child += 1;
+  //   if (cur.age >= 18 && cur.age < 50) acc.adult += 1;
+  //   if (cur.age >= 50) acc.senior += 1;
+  //   return acc;
+  // }, { adult: 0, child: 0, senior: 0 });
+  // return count;
 }
 function calculateEntry(entrants) {
   // seu código aqui
