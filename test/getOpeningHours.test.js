@@ -41,3 +41,11 @@ it('Testando se a função ao receber uma string com o hora incorreta como parâ
   const actual = '08:72-AM';
   expect(() => getOpeningHours('Monday', actual)).toThrow('The minutes must be between 0 and 59');
 });
+it('Testando se a função ao receber um parâmetro como hora verifica se é um número, se não for retorna um erro', () => {
+  const actual = '08:XX-AM';
+  expect(() => getOpeningHours('Monday', actual)).toThrow('The minutes should represent a number');
+});
+it('Testando se a função ao receber um parâmetro como hora verifica se é um número, se não for retorna um erro', () => {
+  const actual = 'XX:00-AM';
+  expect(() => getOpeningHours('Monday', actual)).toThrow('The hour should represent a number');
+});
