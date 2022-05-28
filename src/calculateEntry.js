@@ -25,10 +25,10 @@ function calculateEntry(entrants) {
   if (!entrants) return 0;
   if (Object.keys(entrants).length === 0) return 0;
   // const pricesEntry = data.prices;
-  return entrants.reduce((acc, cur) => {
-    acc.adult *= count.adult;
-    return 
-  }, { adult: 49.99, senior: 24.99, child: 20.99 });
+  // return entrants.reduce((acc, cur) => {
+  //   acc.adult *= count.adult;
+  //   return ;
+  // }, { adult: 49.99, senior: 24.99, child: 20.99 });
 }
 console.log(countEntrants([
   { name: 'Lara Carvalho', age: 5 },
