@@ -1,5 +1,5 @@
 const data = require('../data/zoo_data');
-// recebe o nome da espécie e retorna a sua localização 
+// recebe o nome da espécie e retorna a sua localização
 function getSpecieByLocation(animal) {
   return (data.species.find((element) => element.name === animal.name)).location;
 }
