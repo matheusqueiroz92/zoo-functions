@@ -1,5 +1,4 @@
 const data = require('../data/zoo_data');
-
 // recebe o nome da espécie e retorna a sua localização 
 function getSpecieByLocation(animal) {
   return (data.species.find((element) => element.name === animal.name)).location;
@@ -16,9 +15,10 @@ console.log(getEmployeeResponsibleFor({ name: 'Nigel' }));
 
 const getSpecie = (employee) => {
   const animal = employee.responsibleFor;
-  const nameAnimals = animal.filter((id) => data.species.find((element) => element.id === employee.id));
+  const nameAnimals = animal.filter((id) => data.species
+    .find((element) => element.id === employee.id));
   return nameAnimals;
-}
+};
 
 const mapEmployeesFirst = data.employees.map((element) => element.firstName);
 const mapEmployeesLast = data.employees.map((element) => element.lastName);
